@@ -36,9 +36,9 @@ rename urban_clean urban
 * Convert altitude_m to numeric if needed
 destring altitude_m, replace force
 
-* Summarize the cleaned data
+* Summarize the cleaned data 
 summarize
 codebook urban vcode village altitude_m
 
-* Save the dataset
+* Save the dataset as requested
 save "../data/village_info_clean2025.dta", replace
